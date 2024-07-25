@@ -1,4 +1,4 @@
-const i18nConfig = {
+export const i18nConfig = {
   locales: ["en", "br"],
   defaultLocale: "en",
 };
