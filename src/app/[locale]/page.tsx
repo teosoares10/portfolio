@@ -24,6 +24,33 @@ export default function Home() {
           />
         </div>
       </header>
+
+      <main className="py-24">
+        <div className="h-64 flex items-center justify-between">
+          <Image
+            src={``}
+            alt=""
+            className="size-[20rem] bg-slate-700 rounded-full"
+          />
+
+          <section className="space-y-4 w-[33rem]">
+            <Typography as="h1" className="text-6xl">
+              {t("main.about.title")}
+              <Typography as="span" className="block text-base pt-2">
+                {t("main.about.subtitle")}
+              </Typography>
+            </Typography>
+
+            <Typography>
+              {t.rich("main.about.content", {
+                important: (chuncks) => (
+                  <span className="font-bold italic underline">{chuncks}</span>
+                ),
+              })}
+            </Typography>
+          </section>
+        </div>
+      </main>
     </section>
   );
 }
