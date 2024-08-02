@@ -9,11 +9,9 @@ export default function Home() {
   return (
     <section>
       <header className="h-[92vh] flex flex-col justify-center">
-        <Typography
-          as="h1"
-          content={t("header.title")}
-          className="font-bold text-6xl w-[38rem]"
-        />
+        <Typography as="h1" className="font-bold text-6xl w-[38rem]">
+          {t("header.title")}
+        </Typography>
 
         <div className="space-x-4 mt-2">
           <ButtonLink
